@@ -23,7 +23,7 @@ public class StudentController
 		return new ResponseEntity<Student>(use,HttpStatus.Created);
 	}
 
-	@getmapping("/get")
+	@Postmapping("/get")
 	public ResponseEntity<Student> GETallData(@RequestBody Student s)
 	{
 				Student use = userviesi.getAllData(s);
