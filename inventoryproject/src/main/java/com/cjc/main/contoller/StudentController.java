@@ -20,16 +20,10 @@ public class StudentController
 	public ResponseEntity<Student> GETallData(@RequestBody Student s)
 	{
 				Student use = userviesi.getAllData(s);
-		return new ResponseEntity<Student>(use,HttpStatus.Created);
+		return new ResponseEntity<Student>(use,HttpStatus.CREATED);
 	}
 
-	@Postmapping("/get")
-	public ResponseEntity<Student> GETallData(@RequestBody Student s)
-	{
-				Student use = userviesi.getAllData(s);
-		return new ResponseEntity<Student>(use,HttpStatus.OK);
-	}
-
+	
 
 
 	
